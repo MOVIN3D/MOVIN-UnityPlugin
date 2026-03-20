@@ -69,29 +69,3 @@ Packages/
 ProjectSettings/
 MOVIN-UnityPlugin.unitypackage
 ```
-
-## Git Notes
-
-This repository uses a Unity-friendly `.gitignore`.
-
-The following generated folders and files are excluded from version control:
-
-- `Library/`
-- `Temp/`
-- `Logs/`
-- `UserSettings/`
-- IDE-generated files
-
-The large `unitypackage` file is tracked with Git LFS.
-
-## Notes
-
-- The sample project includes demo characters and scenes.
-- You can change the listening port and bind address in `VMCReceiver` if needed.
-- MOVIN Studio and Unity should use the same `.fbx` character model whenever possible.
-- If the bone names or hierarchy do not match, pose mapping may fail or behave incorrectly.
-- If your avatar uses a different bone naming structure, you may need to adjust the search or mapping behavior in `MocapReceiver`.
-
-## License
-
-Add your project license information here if needed.
