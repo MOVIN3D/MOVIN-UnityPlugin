@@ -69,3 +69,7 @@ Packages/
 ProjectSettings/
 MOVIN-UnityPlugin.unitypackage
 ```
+
+## License
+
+Copyright 2025 MOVIN. All Rights Reserved.
