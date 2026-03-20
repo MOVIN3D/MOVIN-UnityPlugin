@@ -39,6 +39,7 @@ It includes both:
 2. Select `Assets > Import Package > Custom Package...`.
 3. Choose `MOVIN-UnityPlugin.unitypackage`.
 4. Import the package and place the required assets or scripts into your scene.
+5. Make sure the same `.fbx` character model used in MOVIN Studio is also loaded in your Unity project.
 
 ## How It Works
 
@@ -53,6 +54,8 @@ Supported message examples include:
 - `/VMC/Ext/Cam`
 
 `MocapReceiver` maps incoming bone names to Unity transforms and applies the received local position and rotation values.
+
+For best results, MOVIN Studio and the Unity project should use the same `.fbx` character model, or at minimum a character with the exact same bone naming hierarchy.
 
 ## Project Structure
 
@@ -85,6 +88,8 @@ The large `unitypackage` file is tracked with Git LFS.
 
 - The sample project includes demo characters and scenes.
 - You can change the listening port and bind address in `VMCReceiver` if needed.
+- MOVIN Studio and Unity should use the same `.fbx` character model whenever possible.
+- If the bone names or hierarchy do not match, pose mapping may fail or behave incorrectly.
 - If your avatar uses a different bone naming structure, you may need to adjust the search or mapping behavior in `MocapReceiver`.
 
 ## License
